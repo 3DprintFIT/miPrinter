@@ -1,4 +1,5 @@
 #!/bin/bash
+cd "$( dirname "$( type -p $0 )" )"
 openscad="$HOME/Stažené/openscad-2012.06.18/bin/openscad"
 
 rm *.stl -f
