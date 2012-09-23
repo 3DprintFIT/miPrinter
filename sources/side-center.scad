@@ -17,7 +17,7 @@ difference() {
   translate([cubew/2+tail/2,0,-motorh/2+motorw/2+wall]) cube([tail,2*wall+motorw,motorw+2*wall],center=true);
   translate([cubew/2+tail/2-wall/2,0,wall]) cube([tail-wall,motorw,motorh],center=true);
   translate([cubew/2+(tail-wall)/2,0,motorh/2]) scale([1,1,0.7]) rotate([90,0,0]) cylinder(r=(tail-wall)/2,h=inf,center=true);
-  translate([cubew/2+(tail-wall)/2-0.05,0,motorw/2+wall+0.05]) cube([tail-wall+0.1,inf,motorw+2*wall-motorh+0.1],center=true);
+  translate([cubew/2+(tail-wall)/2,0,motorw/2+wall]) cube([tail-wall,inf,motorw+2*wall-motorh],center=true);
   antiholes();
   translate([tail+cubew/2,0,-motorh/2+motorw/2+wall]) rotate([0,90,0])union() {
     // this part is copied form Prusa Mendel
