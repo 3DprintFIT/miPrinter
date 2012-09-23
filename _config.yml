@@ -8,7 +8,7 @@ source: template
 ## Uses distinct namespace. Jekyll settings should go at the root level.
 githubiverse:
     ## Metadata
-    title: "μPrinter"
+    title: "miPrinter"
     author: Miro Hrončok
     license: GPL3
     tags: [reprap]
@@ -17,7 +17,7 @@ githubiverse:
     github:
         base: https://github.com/
         user: hroncok
-        repository: miPrint
+        repository: miPrinter
         branch: master
 
     ## The names of directories where any images, source and stl files associated with the project can be found.
