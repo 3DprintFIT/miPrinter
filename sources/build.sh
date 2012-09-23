@@ -10,3 +10,4 @@ $openscad -m make -o ../stl/cornerL.stl -D 'side=+1' corner.scad
 $openscad -m make -o ../stl/cornerR.stl -D 'side=-1' corner.scad
 $openscad -m make -o ../stl/side.stl side.scad
 $openscad -m make -o ../stl/side-center.stl side-center.scad
+$openscad -m make -o ../stl/topholder.stl topholder.scad
