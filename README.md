@@ -3,6 +3,9 @@ miPrinter
 
 Foldable micro RepRap printer. Not ready for production.
 
+Build
+-----
+
 To rebuild the parts, run sources/build.sh.
 
 License
