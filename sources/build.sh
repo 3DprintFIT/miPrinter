@@ -1,4 +1,6 @@
 #!/bin/bash
+# This is part of miPrint package
+# GNU GPL version 3
 cd "$( dirname "$( type -p $0 )" )"
 openscad="$HOME/Stažené/openscad-2012.06.18/bin/openscad"
 

@@ -1,3 +1,6 @@
+// This is part of miPrint package
+// GNU GPL version 3
+
 include <configuration.scad>
 
 cubew=3*wall+motorw+rod;

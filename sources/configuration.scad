@@ -1,3 +1,6 @@
+// This is part of miPrint package
+// GNU GPL version 3
+
 print = 200;
 wall = 5;
 rod = 8;
