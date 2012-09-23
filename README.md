@@ -1,4 +1,4 @@
-μPrinter
+miPrinter
 =========
 
 Foldable micro RepRap printer. Not ready for production.
