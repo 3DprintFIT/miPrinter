@@ -6,6 +6,6 @@ wall = 5;
 rod = 8;
 minirod = 3;
 motorw = 43;
-motorh = 46; // guess
+motorh = 47;
 inf = 500;
 rail = 10; // outside
