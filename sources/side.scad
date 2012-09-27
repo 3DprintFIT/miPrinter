@@ -13,6 +13,6 @@ difference() {
   translate([cubew/2-rod/2-wall,0,-motorh/2+wall+rod/2]) rotate([90,0,0]) cylinder(r=rod/2,h=inf,center=true);
   translate([-wall/2-rod/2,0,0]) cube([motorw-2*wall,motorw-2*wall,inf],center=true);
   translate([-wall/2-rod/2,0,wall*3]) cube([motorw-2*wall,inf,motorw/2-2*wall],center=true);
-   translate([0,0,wall]) rotate([0,0,90]) cube([motorw/2-2*wall,inf,motorw/2+2*wall],center=true);
+  translate([0,0,wall/2]) rotate([0,0,90]) cube([motorw/2-2*wall,inf,motorw/2+2*wall],center=true);
 }
 

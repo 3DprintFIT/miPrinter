@@ -2,7 +2,7 @@
 // GNU GPL version 3
 
 print = 200;
-wall = 3;
+wall = 5;
 rod = 8;
 minirod = 3;
 motorw = 43;
