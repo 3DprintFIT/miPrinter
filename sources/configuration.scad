@@ -8,4 +8,8 @@ minirod = 3;
 motorw = 43;
 motorh = 47;
 inf = 500;
+
+// RAIL: http://eshop.prodance.cz/fotocache/add/620612_1.jpg
 rail = 10; // outside
+raildepth = 15;
+
