@@ -5,23 +5,21 @@ include <configuration.scad>
 
 
 difference() {
-  translate([motorw*1.1,0,0]) scale([2,1,1]) cylinder(r=motorw/2+wall*1.7,h=wall*4,center=true);
+  translate([motorw*1.1,0,0]) scale([2.1,1,1]) cylinder(r=motorw/2+wall*1.7,h=2*bearingd+wall,center=true,$fn=100);
   translate([inf/2+motorw/2+rod+2*wall,0,0]) cube([inf,inf,inf],center=true);
-  cylinder(r=rod/2+0.1,h=inf,center=true);
+  cylinder(r=rod/2+1,h=inf,center=true);
+  translate([0,0,-bearingd/2+bearingd+wall/2]) cylinder(r=bearingr,h=bearingd,center=true);
+  translate([0,0,bearingd/2-bearingd-wall/2]) cylinder(r=bearingr,h=bearingd,center=true);
   translate([motorw/2+rod/2+wall,motorw/2-wall*1.5,0]) cylinder(r=rod/2,h=inf,center=true);
   translate([motorw/2+rod/2+wall,-motorw/2+wall*1.5,0]) cylinder(r=rod/2,h=inf,center=true);
-  difference() {
-    translate([motorw/2+rod/2+wall,0,0]) rotate([90,0,0]) cylinder(r=(minirod-0.5)/2,h=inf,center=true,$fn=50);
-    cube([inf,motorw-rod,inf],center=true);
-  }
-  translate([motorw/2+wall*2,0,0]) cube([motorw/2,motorw/2-2*wall,wall*4],center=true);
+  translate([motorw/2+wall*2,0,0]) cube([motorw/2,motorw/2-bearingd-wall/2,2*bearingd+wall],center=true);
 }
 
-difference() {
-  translate([motorw*1.1,0,wall*3+rod/2]) scale([2,1,1]) cylinder(r=motorw/2+wall*1.7,h=wall*2+rod,center=true);
+translate([0,0,wall+rod/2+bearingd+wall/2]) difference() {
+  translate([motorw*1.1,0,0]) scale([2.1,1,1]) cylinder(r=motorw/2+wall*1.7,h=wall*2+rod,center=true,$fn=100);
   translate([inf/2+motorw/2+rod+2*wall,0,0]) cube([inf,inf,inf],center=true);
   translate([-inf/2+rod/2+wall*2,0,0]) cube([inf,inf,inf],center=true);
-  translate([0,rod+wall,wall*3+rod/2]) rotate([0,90,0]) cylinder(r=rod/2,h=inf,center=true);
-  translate([0,-rod-wall,wall*3+rod/2]) rotate([0,90,0]) cylinder(r=rod/2,h=inf,center=true);
+  translate([0,rod+wall,0]) rotate([0,90,0]) cylinder(r=rod/2,h=inf,center=true);
+  translate([0,-rod-wall,0]) rotate([0,90,0]) cylinder(r=rod/2,h=inf,center=true);
 }
 
