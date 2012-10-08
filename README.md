@@ -26,9 +26,6 @@ Print
  * x-end-idler.stl
  * x-end-motor.stl
 
-
-Print
-
 License
 -------
 
