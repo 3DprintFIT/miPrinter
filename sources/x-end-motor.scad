@@ -46,11 +46,11 @@ nema17_width=1.7*25.4;
 thickness=9;
 nema17_support_d=nema17_width-nema17_hole_spacing;
 motor_mount_rotation=[0,0,0];
-motor_mount_translation=[xend_width*2-12-thickness,-20,23.5-4.7-12+24.5];
+motor_mount_translation=[xend_width*2-12-thickness,20,23.5-4.7-12+24.5];
 
 top_corner=motor_mount_translation+[thickness,nema17_width/2,nema17_width/2];
 bridge_length=top_corner[0]-9;
-bridge_shear=0.48;
+bridge_shear=1.3;
 
 module positioned_motor_mount()
 {
@@ -68,12 +68,7 @@ module positioned_motor_mount()
 					translate(top_corner+[-bridge_length,-nema17_support_d-bridge_shear*bridge_length,-2.5])
 						multmatrix([[1,0,0],[bridge_shear,1,0],[0,0,1]])
 							cube([bridge_length,nema17_support_d,6]);
-					// quick hack
-					if(linear==true){
-						translate(top_corner+[-bridge_length,-nema17_support_d-bridge_shear*bridge_length+8.5,-2.5])
-							multmatrix([[1,0,0],[bridge_shear+0.16,1,0],[0,0,1]])
-								#cube([bridge_length,nema17_support_d,6]);
-					}
+                   translate([-27,-51.5,50]) cube([100,100,100],center=true);
 				}
 
 				render()
