@@ -15,7 +15,7 @@ githubiverse:
     ## Github project parameters.
     github:
         base: https://github.com/
-        user: hroncok
+        user: 3DprintFIT
         repository: miPrinter
         branch: master
 
