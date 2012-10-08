@@ -3,10 +3,31 @@ miPrinter
 
 Foldable micro RepRap printer. Not ready for production.
 
-Build
+Rebuild
+-------
+
+To rebuild the parts, run sources/build.sh (You'll need OpenSCAD).
+
+Print
 -----
 
-To rebuild the parts, run sources/build.sh.
+* Twice:
+ * cornerL.stl
+ * cornerR.stl
+ * coupling.stl
+ * motortop.stl
+ * topholder.stl
+* Once:
+ * pulley32.stl
+ * pulley8.stl
+ * side.stl
+ * side-center.stl
+ * side-center.stl
+ * x-end-idler.stl
+ * x-end-motor.stl
+
+
+Print
 
 License
 -------
