@@ -16,3 +16,14 @@ layer = 0.3;
 rail = 10; // outside
 raildepth = 15;
 
+// Prusa parts
+use <prusafunc.scad>;
+
+linear = true;
+lme8uu=true;
+m8_diameter = 9;
+m8_nut_diameter = 14.1;
+thin_wall = 3;
+xend_width = 32;
+
+
