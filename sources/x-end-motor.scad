@@ -46,7 +46,7 @@ nema17_width=1.7*25.4;
 thickness=9;
 nema17_support_d=nema17_width-nema17_hole_spacing;
 motor_mount_rotation=[0,0,0];
-motor_mount_translation=[xend_width*2-12-thickness,8,23.5-4.7-12+24.5];
+motor_mount_translation=[xend_width*2-12-thickness,-20,23.5-4.7-12+24.5];
 
 top_corner=motor_mount_translation+[thickness,nema17_width/2,nema17_width/2];
 bridge_length=top_corner[0]-9;
