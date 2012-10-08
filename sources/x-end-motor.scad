@@ -26,10 +26,10 @@ corection = 1.17;
 
 use <x-end.scad>
 
-difference (){
+mirror([0,1,0]) difference (){
 		union ()
 		{
-			mirror() xend(true,linear);
+			mirror([0,1,0]) xend(true,linear);
 		
 			//translate(v = [0, 35, 12.5]) 
 			//xend_nema17();
@@ -38,8 +38,6 @@ difference (){
 		}
 		positioned_motor_mount_holes();
 }
-translate([-5,-30,2])scale([2,1,2]) rotate(a=[90,0,0]) linear_extrude(file = "this-way-up.dxf", layer = "l",
-  height = 2, center = true, convexity = 10, twist = -fanrot);
 
 
 // GregFrosts stuff
@@ -48,7 +46,7 @@ nema17_width=1.7*25.4;
 thickness=9;
 nema17_support_d=nema17_width-nema17_hole_spacing;
 motor_mount_rotation=[0,0,0];
-motor_mount_translation=[44-thickness,8,23.5-4.7-12+24.5];
+motor_mount_translation=[xend_width*2-12-thickness,8,23.5-4.7-12+24.5];
 
 top_corner=motor_mount_translation+[thickness,nema17_width/2,nema17_width/2];
 bridge_length=top_corner[0]-9;
