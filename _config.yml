@@ -25,8 +25,8 @@ githubiverse:
     src_dir: sources
 
     ## The headline image
-    lead_image: test-jig.jpg
-    show_lead_image: false
+    lead_image: photo.jpg
+    show_lead_image: true
 
     ## Optional. When uncommented appends the content of the file defined here to the project description.  Any text in index.md, after the yaml header, will be shown first.
     ## WARNING: since the github outage on 12th Sep. this feature does not currently work.
@@ -36,4 +36,4 @@ githubiverse:
     autoload_stl: true
 
     ## Show a github "fork me" ribbon in the top righthand corner of the page.
-    show_forkme_ribbon: false
+    show_forkme_ribbon: true
