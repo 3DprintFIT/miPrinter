@@ -29,4 +29,4 @@ Print
 License
 -------
 
-This printer is licensed under the terms of GNU GPL version 3, see LICENSING.
+This printer is licensed under the terms of GNU GPL version 3, see COPYING.
