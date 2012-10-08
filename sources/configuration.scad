@@ -23,6 +23,8 @@ linear = true;
 lme8uu=true;
 m8_diameter = 9;
 m8_nut_diameter = 14.1;
+m3_diameter = 3.6;
+m3_nut_diameter = 5.3;
 thin_wall = 3;
 xend_width = 32;
 
