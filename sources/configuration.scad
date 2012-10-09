@@ -20,7 +20,7 @@ raildepth = 15;
 use <prusafunc.scad>;
 
 linear = true;
-lme8uu=true;
+lme8uu=false;
 m8_diameter = 9;
 m8_nut_diameter = 14.1;
 m4_nut_diameter = 9;
