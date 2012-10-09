@@ -23,6 +23,7 @@ Print
  * side.stl
  * side-center.stl
  * side-center.stl
+ * x-carriage.stl
  * x-end-idler.stl
  * x-end-motor.stl
 
