@@ -16,3 +16,4 @@ $openscad -m make -o ../stl/pulley32.stl -D 'teeth=60' pulley.scad
 $openscad -m make -o ../stl/pulley32.stl pulley32.scad
 $openscad -m make -o ../stl/x-end-idler.stl x-end-idler.scad
 $openscad -m make -o ../stl/x-end-motor.stl x-end-motor.scad
+$openscad -m make -o ../stl/x-carriage.stl x-carriage.scad
