@@ -10,8 +10,8 @@ difference() {
   translate([0,0,-wall/2+layer]) cylinder(r=rod/2+1,h=inf);
   translate([0,0,-bearingd/2+bearingd+wall/2]) cylinder(r=bearingr,h=bearingd,center=true);
   translate([0,0,bearingd/2-bearingd-wall/2]) cylinder(r=bearingr,h=bearingd,center=true);
-  translate([motorw/2+rod/2+wall,motorw/2-wall*1.5,0]) cylinder(r=rod/2,h=inf,center=true);
-  translate([motorw/2+rod/2+wall,-motorw/2+wall*1.5,0]) cylinder(r=rod/2,h=inf,center=true);
+  translate([motorw/2+rod/2+wall,motorw/2-wall*1.5,0]) cylinder(r=rod/2+0.5,h=inf,center=true);
+  translate([motorw/2+rod/2+wall,-motorw/2+wall*1.5,0]) cylinder(r=rod/2+0.5,h=inf,center=true);
   translate([motorw/2+wall*2,0,0]) cube([motorw/2,motorw/2-bearingd-wall/2,2*bearingd+wall],center=true);
 }
 
