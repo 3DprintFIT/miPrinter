@@ -37,6 +37,7 @@ mirror([0,1,0]) difference (){
 			translate(v = [0, 0, 0]) positioned_motor_mount();
 		}
 		positioned_motor_mount_holes();
+       translate([-20,-10,49]) cube([40,40,40],center=true);
 }
 
 

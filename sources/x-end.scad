@@ -101,15 +101,16 @@ module xend_side(closed_end=true)
 
 module xend(closed_end=true, linear_bearing=false)
 {
-	
+
 	if(linear_bearing==true) {
-     translate([motorw/2-wall*1.5,xend_length-40,0]) z_linear_bearings();
-     translate([-motorw/2+wall*1.5,xend_length-40,0]) z_linear_bearings();
-    }
-	if(linear_bearing==false) {
-     translate([motorw/2-wall*1.5,xend_length-40,0]) z_bushings();
-     translate([-motorw/2+wall*1.5,xend_length-40,0]) z_bushings();
-    }
+      translate([motorw/2-wall*1.5,xend_length-40,0]) z_linear_bearings();
+	  translate([-motorw/2+wall*1.5,xend_length-40,0]) z_linear_bearings();
+	}
+    if(linear_bearing==false) {
+	  translate([motorw/2-wall*1.5,xend_length-40,0]) z_bushings();
+	  translate([-motorw/2+wall*1.5,xend_length-40,0]) z_bushings();
+	}
+
 difference()
 	{
 		union ()

@@ -33,7 +33,7 @@ module xendidler(linear){
 				union(){
 					translate(v = [xend_width/2+1.5, -21.5, 25.3]) cube(size = [xend_width+0.5,7,4.4], center = true);
 					
-					translate(v = [25, 14.5-support_beam_offset, 25.3]) cube(size = [15,5,4.4], center = true);
+					translate(v = [24, 14.5-support_beam_offset, 25.3]) cube(size = [17,5,4.4], center = true);
 					translate(v = [32.5, -5, 7.5]) cube(size = [5,40,40], center = true);
 				}
 				translate(v = [32.5, -6, 28-3-4.7]) rotate(a=[0,90,0]) cylinder(h = 90, r=m8_diameter/2, $fn=9, center=true);
@@ -41,5 +41,8 @@ module xendidler(linear){
 		}
 	}
 }
-xendidler(linear);
+difference() {
+  xendidler(linear);
+  translate([20,10,49]) cube([40,40,40],center=true);
+}
 
