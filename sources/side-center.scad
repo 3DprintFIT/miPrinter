@@ -28,3 +28,16 @@ difference() {
     cylinder(r=13,h=25, center = true);
   }
 }
+
+module holder(sid=1) {
+  translate([-bigwasher/2+cubew/2+tail,sid*(rod/2+wall*1.5+motorw/2),-motorh/2+bigwasher/4+wall/4]) difference () {
+	union() {
+      cube([bigwasher,rod+wall,bigwasher/2+wall/2],center=true);
+      translate([0,-sid*wall/2,bigwasher/4+wall/4]) rotate([0,90,0]) cylinder(r=wall+rod/2,h=bigwasher,center=true);
+  	}
+  translate([0,-sid*wall/2,bigwasher/4+wall/4]) rotate([0,90,0]) cylinder(r=rod/2,h=bigwasher+1,center=true);
+  }
+}
+
+holder();
+holder(-1);
