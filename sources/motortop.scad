@@ -19,7 +19,7 @@ difference() {
   rotate ([0,0,135]) translate([20,0,0]) cube(size = [9,3.2,25], center = true);
   rotate ([0,0,-135]) translate([20,0,0]) cube(size = [9,3.2,25], center = true);
   cylinder(r=13,h=25, center = true);
-  // savng material
+  // savng material (and hole for motor cabels)
   translate([cubew/2-wall,0,0]) cylinder(r=rod*0.7,h=inf,center=true);
 }
 
