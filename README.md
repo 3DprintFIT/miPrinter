@@ -1,7 +1,7 @@
 miPrinter
 =========
 
-Foldable micro RepRap printer. Not ready for production.
+Foldable micro RepRap printer. Not ready for production, but almost done.
 
 Rebuild
 -------
@@ -18,14 +18,14 @@ Print
  * motortop.stl
  * topholder.stl
 * Once:
- * pulley32.stl
- * pulley8.stl
  * side.stl
  * side-center.stl
  * side-center.stl
  * x-carriage.stl
  * x-end-idler.stl
  * x-end-motor.stl
+
+And if you don't use alluminium pulleys, print also  pulley8.stl twice.
 
 License
 -------
