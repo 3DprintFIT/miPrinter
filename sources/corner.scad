@@ -25,7 +25,7 @@ difference() {
 
 translate([rail/2-rod/2+2*wall+motorw,side*(raildepth+wall)/2,0]) difference() {
   cube([2*wall+rail,raildepth+wall,width],center=true);
-  translate([0,side*wall/2,wall/2]) cube([rail,raildepth,width-wall],center=true);
+  translate([0,side*wall/2,wall/2]) cube([rail*1.12,raildepth,width-wall],center=true);
 }
 
 translate([motorw/2+2*rod,side*2*wall,0]) difference() {
