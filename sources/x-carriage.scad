@@ -9,7 +9,6 @@
 // http://github.com/prusajr/PrusaMendel
 
 include <configuration.scad>
-
 /**
  * @id x-carriage
  * @name X carriage
@@ -160,9 +159,9 @@ if(linear_bearings){
 	translate(v = [-39.01,20.51,0])cut_corners(false,false,true, true);
 }else{
 	translate(v = [25.01,-30.01,5.01])standart_bushing();
-	translate(v = [-25.01,-30.01,5.01])standart_bushing();
+	//translate(v = [-25.01,-30.01,5.01])standart_bushing();
 	translate(v = [25.01,30.01,5.01])standart_bushing();
-	translate(v = [-39.01,30.01,5.01])standart_bushing();
+	translate(v = [-39.01,2.8,5.01])standart_bushing();
 }
 }
 }
