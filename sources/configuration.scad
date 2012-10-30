@@ -1,5 +1,8 @@
-// This is part of miPrint package
-// GNU GPL version 3
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
+// Configuration
+// GNU GPL v3
+// Miro Hrončok
 
 print = 200;
 wall = 5;

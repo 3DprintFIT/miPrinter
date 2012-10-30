@@ -1,11 +1,8 @@
-// PRUSA Mendel  
-// Bushings
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
+// Teardrop
 // GNU GPL v3
 // Josef Průša
-// josefprusa@me.com
-// prusadjs.cz
-// http://www.reprap.org/wiki/Prusa_Mendel
-// http://github.com/prusajr/PrusaMendel
 
 teardropcentering2();
 

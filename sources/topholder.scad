@@ -1,8 +1,10 @@
-// This is part of miPrint package
-// GNU GPL version 3
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
+// Top part holder
+// GNU GPL v3
+// Miro Hrončok
 
 include <configuration.scad>
-
 
 difference() {
   translate([motorw*1.1,0,0]) scale([2.1,1,1]) cylinder(r=motorw/2+wall*1.7,h=2*bearingd+wall,center=true,$fn=100);

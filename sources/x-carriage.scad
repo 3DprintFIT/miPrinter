@@ -1,22 +1,11 @@
-// PRUSA Mendel  
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
 // X-carriage
-// Used for sliding on X axis
 // GNU GPL v3
 // Josef Průša
-// josefprusa@me.com
-// prusadjs.cz
-// http://www.reprap.org/wiki/Prusa_Mendel
-// http://github.com/prusajr/PrusaMendel
+// Miro Hrončok
 
 include <configuration.scad>
-/**
- * @id x-carriage
- * @name X carriage
- * @category Printed
- * @using 2 m4nut
- * @using 2 m4x25
- */
-
 snap_in_mount = false;
 use <bushing.scad>
 

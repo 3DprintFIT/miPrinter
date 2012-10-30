@@ -1,5 +1,8 @@
-// This is part of miPrint package
-// GNU GPL version 3
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
+// Corner
+// GNU GPL v3
+// Miro Hrončok
 
 include <configuration.scad>
 

@@ -1,10 +1,11 @@
-// This is part of miPrint package
-// GNU GPL version 3
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
+// Calibration test
+// GNU GPL v3
+// Marek Žehra
+
 include <configuration.scad>
 
-/**
- *@name Configuration test
- */
 module configurationtest(){
 	difference(){
 		cube([m8_nut_diameter+m3_nut_diameter+2*wall,m8_nut_diameter+wall,10], center=true);

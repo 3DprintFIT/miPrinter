@@ -1,29 +1,12 @@
-// PRUSA Mendel  
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
 // X-end with NEMA 17 motor mount
 // GNU GPL v3
 // Josef Průša
-// josefprusa@me.com
-// prusadjs.cz
-// http://www.reprap.org/wiki/Prusa_Mendel
-// http://github.com/prusajr/PrusaMendel
+// Miro Hrončok
 
 include <configuration.scad>
 corection = 1.17; 
-
-/**
- * @id x-end-motor
- * @name X end motor
- * @category Printed
- * @using 2 bushing
- * @using 4 m3x10xhex
- * @using 4 m3washer
- * @using 1 m8spring
- * @using 2 m8nut
- */
-
-
-
-
 use <x-end.scad>
 
 mirror([0,1,0]) difference (){

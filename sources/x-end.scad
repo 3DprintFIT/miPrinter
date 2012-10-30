@@ -1,12 +1,10 @@
-// PRUSA Mendel  
-// X-end prototype for
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
+// X-end
 // GNU GPL v3
-// Josef Prusa
-// josefprusa@me.com
-// prusadjs.cz
-// http://www.reprap.org/wiki/Prusa_Mendel
-// http://github.com/prusajr/PrusaMendel
-// Thanks to GregFrost for refactoring!
+// GregFrost
+// Josef Průša
+// Miro Hrončok
 
 include <configuration.scad>
 corection = 1.17; 

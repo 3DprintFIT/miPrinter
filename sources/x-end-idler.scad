@@ -1,11 +1,9 @@
-// PRUSA Mendel  
+// miPrinter
+// https://github.com/3DprintFIT/miPrinter
 // X-end with idler mount
 // GNU GPL v3
 // Josef Průša
-// josefprusa@me.com
-// prusadjs.cz
-// http://www.reprap.org/wiki/Prusa_Mendel
-// http://github.com/prusajr/PrusaMendel
+// Miro Hrončok
 
 include <configuration.scad>
 
