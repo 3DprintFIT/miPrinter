@@ -15,7 +15,6 @@ module ybract(){
 		rotate(a=[0,0,-2])translate([7,4.5])rotate([0,0,90])mirror()linear_extrude(file="ybrac-t.dxf",height=10);
 		rotate(a=[0,0,-2]){
 			translate([3.4,30.05,-10])polyhole(m8_diameter, 30);
-			translate([-26,-21,-10])polyhole(m8_diameter, 30);
 
 			translate([33.5,-20.5,10])cylinder(h=30,r=4.4/2, center=true);
 			translate([4.5,-10,10])cylinder(h=30,r=4.4/2, center=true);
@@ -33,6 +32,5 @@ module ybract(){
 		}
 	}
 }
-//mirror()
-ybract();
+mirror() ybract();
 
