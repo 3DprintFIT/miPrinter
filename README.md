@@ -1,7 +1,7 @@
 miPrinter
 =========
 
-Foldable micro RepRap printer. Not ready for production, but almost done.
+Foldable RepRap printer. Not ready for production, but almost done.
 
 Rebuild
 -------
@@ -31,4 +31,4 @@ And if you don't use alluminium pulleys, print also  pulley8.stl twice.
 License
 -------
 
-This printer is licensed under the terms of GNU GPL version 3, see COPYING.
+This printer is licensed under the terms of GNU GPL version 3, see COPYING. Lot's of parts are form josefprusa/PrusaMendel - some of them are bit modified.
