@@ -7,6 +7,8 @@ openscad="openscad"
 $openscad -m make -o ../stl/cornerL.stl -D 'side=+1' corner.scad
 $openscad -m make -o ../stl/cornerR.stl -D 'side=-1' corner.scad
 $openscad -m make -o ../stl/side.stl side.scad
+$openscad -m make -o ../stl/belt-clamp-nut-holder.stl belt-clamp-nut-holder.scad
+$openscad -m make -o ../stl/belt-clamp.stl belt-clamp.scad
 $openscad -m make -o ../stl/coupling.stl coupling.scad
 $openscad -m make -o ../stl/topholder.stl topholder.scad
 $openscad -m make -o ../stl/motortop.stl motortop.scad
