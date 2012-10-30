@@ -11,18 +11,20 @@ To rebuild the parts, run sources/build.sh (You'll need OpenSCAD).
 Print
 -----
 
+* Once:
+ * x-carriage.stl
+ * x-end-idler.stl
+ * x-end-motor.stl
 * Twice:
+ * belt-clamp-nut-holder.stl
  * cornerL.stl
  * cornerR.stl
  * coupling.stl
  * motortop.stl
  * topholder.stl
  * side.stl
-* Once:
- * side-center.stl
- * x-carriage.stl
- * x-end-idler.stl
- * x-end-motor.stl
+* Four times:
+ * belt-clamp.stl
 
 And if you don't use alluminium pulleys, print also  pulley8.stl twice.
 
