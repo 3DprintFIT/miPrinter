@@ -29,8 +29,7 @@ rod_support_width=10;
 m8cornerdiameter = (m8_nut_diameter / 2) / cos (180 / 6);
 
 module xend_side(closed_end=true) {
-	translate([xend_width,0,0])
-	difference () {
+	translate([xend_width,0,0]) difference () {
 		union() {
 			// Base with cutted sides
 			difference (){
@@ -54,7 +53,7 @@ module xend_side(closed_end=true) {
 			// Base of the stuff to cut pres fit mechanism (need some cutouts)
 			union () {
 				// Basic teardrop cutout
-				//translate([0,-1,0]) rotate(90) teardropcentering(axis_diameter_larger,closed_end?xend_length-1:xend_length+2);
+				translate([0,-1,0]) rotate(90) teardropcentering(axis_diameter_larger,closed_end?xend_length-1:xend_length+2);
 			
 				// Main holes thru the bottom
 				translate([axis_diameter_larger,0,0]) rotate([0,8,0]) translate([-axis_diameter_larger,solid_end_width,-xend_height/2-1]) cube([axis_diameter_larger,xend_length-2*solid_end_width,xend_height/2+1]);
@@ -77,7 +76,7 @@ module xend_side(closed_end=true) {
 				translate([-slot_width,solid_end_width,-xend_height/2-1])
 				cube([slot_width,xend_length-2*solid_end_width,xend_height/2+1]);
 				// hack for a taper opening
-				//translate(v=[0,15,1.1]) rotate(a=90,v=[1,0,0]) cylinder(r1=axis_diameter_larger, r2=axis_diameter_larger+1.5,h=15, $fn=30);
+				translate(v=[0,15,1.1]) rotate(a=90,v=[1,0,0]) cylinder(r1=axis_diameter_larger, r2=axis_diameter_larger+1.5,h=15, $fn=30);
 			}
 		}
 	
@@ -98,7 +97,7 @@ module xend(closed_end=true, linear_bearing=false) {
 	  translate([-motorw/2+wall*1.5,xend_length-40,0]) z_bushings();
 	}
 
-difference() {
+	difference() {
 		union () {
 			translate(v = [0,-25,xend_height/2]) {
 				xend_side(closed_end=closed_end,curved_sides=0);
