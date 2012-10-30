@@ -17,9 +17,8 @@ Print
  * coupling.stl
  * motortop.stl
  * topholder.stl
-* Once:
  * side.stl
- * side-center.stl
+* Once:
  * side-center.stl
  * x-carriage.stl
  * x-end-idler.stl
