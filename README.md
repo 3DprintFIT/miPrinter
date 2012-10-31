@@ -17,6 +17,7 @@ Print
  * x-carriage.stl
  * x-end-idler.stl
  * x-end-motor.stl
+ * ybrac-t.stl
 * Twice:
  * belt-clamp-nut-holder.stl
  * cornerL.stl
