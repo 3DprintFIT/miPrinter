@@ -3,6 +3,7 @@
 // Z Motor top plate
 // GNU GPL v3
 // Miro Hrončok
+// Josef Průša
 
 include <configuration.scad>
 
