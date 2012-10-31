@@ -1,46 +1,54 @@
+OPENSCAD = openscad -m make -o $@ $<
+
 TARGETS = \
-	cornerL.stl \
-	cornerR.stl \
-	coupling.stl \
-	motortop.stl \
-	pulley32.stl \
-	pulley.stl \
-	side-center.stl \
-	side.stl \
-	topholder.stl \
-	x-carriage.stl \
-	x-end-idler.stl \
-	x-end-motor.stl \
+	belt-clamp-nut-holder \
+	belt-clamp \
+	cornerL \
+	cornerR \
+	coupling \
+	motortop \
+	pulley8 \
+	side \
+	topholder \
+	x-carriage \
+	x-end-idler \
+	x-end-motor \
+	ybrac-t \
 
-STL_DIR=stl/
-#STL_LM8UU_DIR=stl/
-SRC_DIR=sources/
 
-all: default #lm8uu
+STL_DIR = stl
+SRC_DIR = sources
 
-calibration:
-	openscad -m make -o calibration.stl $(SRC_DIR)calibration.scad
+DEPEND = $(SRC_DIR)/configuration.scad $(SRC_DIR)/prusafunc.scad
 
-default: $(addprefix $(STL_DIR),$(TARGETS)) $(STL_DIR)frame-vertex-foot.stl
+all: $(patsubst %,$(STL_DIR)/%.stl, $(TARGETS))
+calibration: $(STL_DIR)/calibration.stl
 
-#lm8uu: $(addprefix $(STL_LM8UU_DIR),$(TARGETS)) $(STL_LM8UU_DIR)frame-vertex-foot.stl
+# Special options
+$(STL_DIR)/cornerL.stl: $(SRC_DIR)/corner.scad $(DEPEND)
+	$(OPENSCAD) -D 'side=+1'
 
-$(STL_DIR)frame-vertex-foot.stl:
-	openscad -m make -o $@ -D 'basefoot=true' $(SRC_DIR)frame-vertex.scad
+$(STL_DIR)/cornerR.stl: $(SRC_DIR)/corner.scad $(DEPEND)
+	$(OPENSCAD) -D 'side=-1'
 
-$(addprefix $(STL_DIR),$(TARGETS)):
-	openscad -m make -o $@ $(patsubst %.stl,%.scad,$(SRC_DIR)$(subst $(STL_DIR),,$@))
-	
-#$(addprefix $(STL_LM8UU_DIR),$(TARGETS)):
-#	openscad -m make -D 'linear=true;lme8uu=false' -o $@ $(patsubst %.stl,%.scad,$(SRC_DIR)$(subst $(STL_LM8UU_DIR),,$@))
+$(STL_DIR)/pulley8.stl: $(SRC_DIR)/pulley.scad $(DEPEND)
+	$(OPENSCAD) -D 'teeth=16'
 
-#$(STL_LM8UU_DIR)frame-vertex-foot.stl: $(STL_DIR)frame-vertex-foot.stl
-#	cp $(STL_DIR)frame-vertex-foot.stl $(STL_LM8UU_DIR)frame-vertex-foot.stl
-	
+# X ends depends on more files
+X-END-DEPEND = $(DEPEND) $(SRC_DIR)/x-end.scad $(SRC_DIR)/bushing.scad $(SRC_DIR)/teardrop.scad
+$(STL_DIR)/x-end-%.stl: $(SRC_DIR)/x-end-%.scad $(X-END-DEPEND)
+	$(OPENSCAD)
+
+# As well as X carriage
+X-CAR-DEPEND = $(DEPEND) $(SRC_DIR)/bushing.scad
+$(STL_DIR)/x-carriage.stl: $(SRC_DIR)/x-carriage.scad $(X-CAR-DEPEND)
+	$(OPENSCAD)
+
+# ybarc-t depens odn it's dxf but I don't change it (ever)
+
+# General rest
+$(STL_DIR)/%.stl: $(SRC_DIR)/%.scad $(DEPEND)
+	$(OPENSCAD)
+
 clean:
-	rm -f $(STL_DIR)*.stl
-#	rm -f $(STL_LM8UU_DIR)*.stl
-	
-	
-	
-	
+	rm $(STL_DIR)/*.stl -f

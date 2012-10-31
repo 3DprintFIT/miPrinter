@@ -6,7 +6,7 @@ Foldable RepRap printer. Not ready for production, but almost done.
 Rebuild
 -------
 
-To rebuild the parts, run sources/build.sh (You'll need OpenSCAD).
+To rebuild the parts, run make (You'll need OpenSCAD).
 
 Print
 -----
