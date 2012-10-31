@@ -6,7 +6,9 @@ Foldable RepRap printer. Not ready for production, but almost done.
 Rebuild
 -------
 
-To rebuild the parts, run make (You'll need OpenSCAD).
+To rebuild the parts, run `make` (you'll need `openscad` in `$PATH`).
+
+It is advised to run `make calibration` first, print the result and adjust configuration.scad until you are satisfated.
 
 Print
 -----
