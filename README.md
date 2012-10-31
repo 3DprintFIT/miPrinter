@@ -34,4 +34,6 @@ And if you don't use alluminium pulleys, print also [pulley8.stl](https://github
 License
 -------
 
-This printer is licensed under the terms of GNU GPL version 3, see COPYING. Lot's of parts are form [josefprusa/PrusaMendel](https://github.com/josefprusa/PrusaMendel) - some of them are bit modified.
+This printer is licensed under the terms of GNU GPL version 3, see COPYING.
+
+Lot's of parts are form [josefprusa/PrusaMendel](https://github.com/josefprusa/PrusaMendel) - some of them are bit modified.
