@@ -1,4 +1,4 @@
-OPENSCAD = openscad -m make -o $@ $<
+OPENSCAD = openscad -o $@ $<
 
 TARGETS = \
 	belt-clamp-nut-holder \
